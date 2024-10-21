@@ -1,0 +1,257 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center; */
+}
+
+/* we have used this for the background of navbar  */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px ;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 55px;
+    margin: 2px 5px;
+    border: 1px solid greenyellow;
+    border-radius: 50px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    /* background-color: rgba(250, 235, 215, 0.106); */
+    display: block;
+    padding: 3px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* This is for navbar ul li a hover properties  */
+#navbar ul li a:hover {
+    color: black;
+    background-color: honeydew;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    height: 345px;
+    flex-direction: column;
+    padding: 8px 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for home background be have used pseudo selector */
+
+#home::before {
+    content: "";
+    background: url("../img/pexels-ella-olsson-572949-1640772.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    top: 0px;
+    left: 0px ;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    color: rgb(8, 7, 7);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
+/* Service Section  */
+
+#services{
+    margin: 30px;
+    display: flex;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 15px;
+    border-radius: 24px;
+    background-color: rgb(251, 247, 247); 
+    margin-bottom: 20px;
+}
+
+#services .box img{
+   height: 160px ;
+   width: 150px;
+   display: block;
+   margin: auto;
+}
+
+#services .box p{
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* Client Section */
+
+#client-section{
+    /* height: 300px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/img/pexels-xmtnguyen-699953.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items{
+    padding: 35px;
+}
+
+#clients img{
+    height: 250px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(/img/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.webp)no-repeat center center/cover ;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px 12px;
+
+}
+
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 14px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 14px;
+}
+
+.btn{
+    padding: 6px 20px ;
+    border: 2px solid white;
+    margin: 10px;
+    background-color: rgba(165, 42, 42, 0.366);
+    color: white;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
